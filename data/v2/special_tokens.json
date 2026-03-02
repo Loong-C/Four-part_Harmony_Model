@@ -1,0 +1,7 @@
+{
+  "PAD": "<PAD>",
+  "UNK": "<UNK>",
+  "BOS_STEP": "<BOS_STEP>",
+  "REST": "<REST>",
+  "HOLD": "<HOLD>"
+}

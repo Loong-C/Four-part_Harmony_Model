@@ -1,0 +1,18 @@
+{
+  "timestamp_utc": "2026-03-02T11:31:02.792679+00:00",
+  "checkpoint": "checkpoints/v2/best_nll.ckpt",
+  "suite": "configs/benchmark_progressions.yaml",
+  "validation": {
+    "nll_proxy": 5.14680925309658,
+    "onset_accuracy": 0.7205348309547929,
+    "chord_fit": 0.9608841219519422
+  },
+  "theory": {
+    "range_violation_rate": 0.0,
+    "voice_crossing_rate": 0.03058823529411765,
+    "parallel_rate": 0.019319938176197836,
+    "tendency_resolution_rate": 0.49523809523809526,
+    "chord_fit": 0.999409681227863,
+    "generated_samples": 100
+  }
+}

@@ -1,0 +1,22 @@
+cases:
+  - key: C
+    mode: major
+    progression: [I, IV, V, I]
+    durations: [1.0, 1.0, 1.0, 2.0]
+    repeats: 25
+  - key: G
+    mode: major
+    progression: [I, ii, V, I]
+    durations: [1.0, 1.0, 1.0, 2.0]
+    repeats: 25
+  - key: D
+    mode: major
+    progression: [I, IV, I64, V, I]
+    durations: [1.0, 1.0, 1.0, 1.0, 2.0]
+    repeats: 25
+  - key: a
+    mode: minor
+    progression: [i, iv, V, i]
+    durations: [1.0, 1.0, 1.0, 2.0]
+    repeats: 25
+

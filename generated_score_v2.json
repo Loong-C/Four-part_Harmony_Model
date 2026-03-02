@@ -1,0 +1,354 @@
+[
+  {
+    "step": 1,
+    "key": "C:major",
+    "roman": "I",
+    "inversion": "root",
+    "dur": 1.0,
+    "score": 2.0,
+    "rerank_detail": {
+      "onset_count": 4,
+      "chord_fit_count": 4,
+      "range_violation": 0,
+      "crossing": 0,
+      "parallel": 0,
+      "large_leap": 0
+    },
+    "S": {
+      "token": "ON_7_4",
+      "kind": "onset",
+      "degree_rel": 7,
+      "octave_bucket": 4,
+      "midi_abs": 67
+    },
+    "A": {
+      "token": "ON_4_4",
+      "kind": "onset",
+      "degree_rel": 4,
+      "octave_bucket": 4,
+      "midi_abs": 64
+    },
+    "T": {
+      "token": "ON_0_4",
+      "kind": "onset",
+      "degree_rel": 0,
+      "octave_bucket": 4,
+      "midi_abs": 60
+    },
+    "B": {
+      "token": "ON_0_3",
+      "kind": "onset",
+      "degree_rel": 0,
+      "octave_bucket": 3,
+      "midi_abs": 48
+    }
+  },
+  {
+    "step": 2,
+    "key": "C:major",
+    "roman": "IV",
+    "inversion": "root",
+    "dur": 1.0,
+    "score": 2.0,
+    "rerank_detail": {
+      "onset_count": 4,
+      "chord_fit_count": 4,
+      "range_violation": 0,
+      "crossing": 0,
+      "parallel": 0,
+      "large_leap": 0
+    },
+    "S": {
+      "token": "ON_9_4",
+      "kind": "onset",
+      "degree_rel": 9,
+      "octave_bucket": 4,
+      "midi_abs": 69
+    },
+    "A": {
+      "token": "ON_5_4",
+      "kind": "onset",
+      "degree_rel": 5,
+      "octave_bucket": 4,
+      "midi_abs": 65
+    },
+    "T": {
+      "token": "ON_0_4",
+      "kind": "onset",
+      "degree_rel": 0,
+      "octave_bucket": 4,
+      "midi_abs": 60
+    },
+    "B": {
+      "token": "ON_5_3",
+      "kind": "onset",
+      "degree_rel": 5,
+      "octave_bucket": 3,
+      "midi_abs": 53
+    }
+  },
+  {
+    "step": 3,
+    "key": "C:major",
+    "roman": "V",
+    "inversion": "root",
+    "dur": 1.0,
+    "score": 2.0,
+    "rerank_detail": {
+      "onset_count": 4,
+      "chord_fit_count": 4,
+      "range_violation": 0,
+      "crossing": 0,
+      "parallel": 0,
+      "large_leap": 0
+    },
+    "S": {
+      "token": "ON_2_5",
+      "kind": "onset",
+      "degree_rel": 2,
+      "octave_bucket": 5,
+      "midi_abs": 74
+    },
+    "A": {
+      "token": "ON_7_4",
+      "kind": "onset",
+      "degree_rel": 7,
+      "octave_bucket": 4,
+      "midi_abs": 67
+    },
+    "T": {
+      "token": "ON_11_3",
+      "kind": "onset",
+      "degree_rel": 11,
+      "octave_bucket": 3,
+      "midi_abs": 59
+    },
+    "B": {
+      "token": "ON_7_3",
+      "kind": "onset",
+      "degree_rel": 7,
+      "octave_bucket": 3,
+      "midi_abs": 55
+    }
+  },
+  {
+    "step": 4,
+    "key": "C:major",
+    "roman": "I",
+    "inversion": "root",
+    "dur": 1.0,
+    "score": 2.0,
+    "rerank_detail": {
+      "onset_count": 4,
+      "chord_fit_count": 4,
+      "range_violation": 0,
+      "crossing": 0,
+      "parallel": 0,
+      "large_leap": 0
+    },
+    "S": {
+      "token": "ON_4_5",
+      "kind": "onset",
+      "degree_rel": 4,
+      "octave_bucket": 5,
+      "midi_abs": 76
+    },
+    "A": {
+      "token": "ON_7_4",
+      "kind": "onset",
+      "degree_rel": 7,
+      "octave_bucket": 4,
+      "midi_abs": 67
+    },
+    "T": {
+      "token": "ON_0_4",
+      "kind": "onset",
+      "degree_rel": 0,
+      "octave_bucket": 4,
+      "midi_abs": 60
+    },
+    "B": {
+      "token": "ON_0_3",
+      "kind": "onset",
+      "degree_rel": 0,
+      "octave_bucket": 3,
+      "midi_abs": 48
+    }
+  },
+  {
+    "step": 5,
+    "key": "C:major",
+    "roman": "IV",
+    "inversion": "6",
+    "dur": 1.0,
+    "score": 2.0,
+    "rerank_detail": {
+      "onset_count": 4,
+      "chord_fit_count": 4,
+      "range_violation": 0,
+      "crossing": 0,
+      "parallel": 0,
+      "large_leap": 0
+    },
+    "S": {
+      "token": "ON_0_5",
+      "kind": "onset",
+      "degree_rel": 0,
+      "octave_bucket": 5,
+      "midi_abs": 72
+    },
+    "A": {
+      "token": "ON_5_4",
+      "kind": "onset",
+      "degree_rel": 5,
+      "octave_bucket": 4,
+      "midi_abs": 65
+    },
+    "T": {
+      "token": "ON_0_4",
+      "kind": "onset",
+      "degree_rel": 0,
+      "octave_bucket": 4,
+      "midi_abs": 60
+    },
+    "B": {
+      "token": "ON_9_2",
+      "kind": "onset",
+      "degree_rel": 9,
+      "octave_bucket": 2,
+      "midi_abs": 45
+    }
+  },
+  {
+    "step": 6,
+    "key": "C:major",
+    "roman": "I",
+    "inversion": "64",
+    "dur": 1.0,
+    "score": 1.6,
+    "rerank_detail": {
+      "onset_count": 3,
+      "chord_fit_count": 3,
+      "range_violation": 0,
+      "crossing": 0,
+      "parallel": 0,
+      "large_leap": 1
+    },
+    "S": {
+      "token": "<HOLD>",
+      "kind": "hold",
+      "degree_rel": null,
+      "octave_bucket": null,
+      "midi_abs": 72
+    },
+    "A": {
+      "token": "ON_7_4",
+      "kind": "onset",
+      "degree_rel": 7,
+      "octave_bucket": 4,
+      "midi_abs": 67
+    },
+    "T": {
+      "token": "ON_4_4",
+      "kind": "onset",
+      "degree_rel": 4,
+      "octave_bucket": 4,
+      "midi_abs": 64
+    },
+    "B": {
+      "token": "ON_7_3",
+      "kind": "onset",
+      "degree_rel": 7,
+      "octave_bucket": 3,
+      "midi_abs": 55
+    }
+  },
+  {
+    "step": 7,
+    "key": "C:major",
+    "roman": "V",
+    "inversion": "root",
+    "dur": 1.0,
+    "score": 2.0,
+    "rerank_detail": {
+      "onset_count": 3,
+      "chord_fit_count": 3,
+      "range_violation": 0,
+      "crossing": 0,
+      "parallel": 0,
+      "large_leap": 0
+    },
+    "S": {
+      "token": "ON_7_4",
+      "kind": "onset",
+      "degree_rel": 7,
+      "octave_bucket": 4,
+      "midi_abs": 67
+    },
+    "A": {
+      "token": "ON_2_4",
+      "kind": "onset",
+      "degree_rel": 2,
+      "octave_bucket": 4,
+      "midi_abs": 62
+    },
+    "T": {
+      "token": "ON_11_3",
+      "kind": "onset",
+      "degree_rel": 11,
+      "octave_bucket": 3,
+      "midi_abs": 59
+    },
+    "B": {
+      "token": "<HOLD>",
+      "kind": "hold",
+      "degree_rel": null,
+      "octave_bucket": null,
+      "midi_abs": 55
+    }
+  },
+  {
+    "step": 8,
+    "key": "C:major",
+    "roman": "I",
+    "inversion": "6",
+    "dur": 1.0,
+    "score": 2.0,
+    "rerank_detail": {
+      "onset_count": 4,
+      "chord_fit_count": 4,
+      "range_violation": 0,
+      "crossing": 0,
+      "parallel": 0,
+      "large_leap": 0
+    },
+    "S": {
+      "token": "ON_0_5",
+      "kind": "onset",
+      "degree_rel": 0,
+      "octave_bucket": 5,
+      "midi_abs": 72
+    },
+    "A": {
+      "token": "ON_7_4",
+      "kind": "onset",
+      "degree_rel": 7,
+      "octave_bucket": 4,
+      "midi_abs": 67
+    },
+    "T": {
+      "token": "ON_0_4",
+      "kind": "onset",
+      "degree_rel": 0,
+      "octave_bucket": 4,
+      "midi_abs": 60
+    },
+    "B": {
+      "token": "ON_4_3",
+      "kind": "onset",
+      "degree_rel": 4,
+      "octave_bucket": 3,
+      "midi_abs": 52
+    }
+  }
+]

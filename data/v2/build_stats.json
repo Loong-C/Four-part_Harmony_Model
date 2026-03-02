@@ -1,0 +1,8 @@
+{
+  "num_candidates": 410,
+  "num_success": 409,
+  "num_failures": 1,
+  "num_train": 327,
+  "num_val": 40,
+  "num_test": 42
+}

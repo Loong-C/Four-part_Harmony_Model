@@ -1,0 +1,23 @@
+{
+  "<PAD>": 0,
+  "<UNK>": 1,
+  "A-:major": 2,
+  "A:major": 3,
+  "A:minor": 4,
+  "B-:major": 5,
+  "B-:minor": 6,
+  "B:major": 7,
+  "B:minor": 8,
+  "C:major": 9,
+  "C:minor": 10,
+  "D:major": 11,
+  "D:minor": 12,
+  "E-:major": 13,
+  "E:major": 14,
+  "E:minor": 15,
+  "F#:minor": 16,
+  "F:major": 17,
+  "F:minor": 18,
+  "G:major": 19,
+  "G:minor": 20
+}
