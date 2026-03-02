@@ -1,0 +1,8 @@
+# === Training artifacts ===
+checkpoints/
+runs/
+logs/
+
+# === Python cache ===
+__pycache__/
+*.pyc
