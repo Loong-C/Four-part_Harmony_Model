@@ -52,33 +52,52 @@ def convert_data_to_tensor(raw_data, chord2id, dur2id, pitch2id):
     return torch.tensor(tensor_data, dtype=torch.long)
 
 if __name__ == "__main__":
+    from dataset import HarmonyDataset
+    from torch.utils.data import DataLoader
+    
     print("--- 1. 开始提取原始数据 ---")
     raw_dataset = extract_structured_harmony_data('bach/bwv253.mxl')
     
     print("\n--- 2. 开始构建模型词表 (Tokenizer) ---")
     chord2id, dur2id, pitch2id = build_vocabularies(raw_dataset)
-    # 统计各个特征的总词汇量大小，供 Embedding 层初始化使用
     vocab_sizes = {
         'chord': len(chord2id),
         'duration': len(dur2id),
         'pitch': len(pitch2id)
     }
-    print(f"提取完成: 发现 {vocab_sizes['chord']} 种和弦, {vocab_sizes['duration']} 种时长, {vocab_sizes['pitch']} 种音高状态。")
     
     print("\n--- 3. 将原始数据转换为 PyTorch 张量 ---")
     tensor_sequence = convert_data_to_tensor(raw_dataset, chord2id, dur2id, pitch2id)
-    print(f"生成的张量形状: {tensor_sequence.shape} (长度为 {tensor_sequence.shape[0]} 个时间步，每个时间步包含 6 个特征)")
+    print(f"生成的整曲张量形状: {tensor_sequence.shape}")
     
-    print("\n--- 4. 初始化 Embedding 层并流经数据 ---")
-    d_model = 256 # 隐藏层维度
+    # ================= 新增的代码在这里 =================
+    
+    print("\n--- 4. 构建数据传送带 (DataLoader) ---")
+    # 设定模型的“视野大小”（上下文长度），比如让它一次看 16 个和声切片
+    context_length = 16 
+    
+    # 实例化我们刚刚写的 Dataset
+    dataset = HarmonyDataset(tensor_sequence, context_length)
+    
+    # 实例化 DataLoader，它会帮我们自动打乱顺序 (shuffle) 并打包成 Batch
+    # batch_size=4 意味着模型一次并行处理 4 个不同的乐句切片
+    dataloader = DataLoader(dataset, batch_size=4, shuffle=True)
+    
+    print(f"数据集切分完成！共产生 {len(dataset)} 个训练样本。")
+    print(f"以 batch_size=4 打包，共有 {len(dataloader)} 个 Batch。")
+    
+    print("\n--- 5. 模拟训练时的前向传播流动 ---")
+    d_model = 256 # Transformer 的隐藏层维度
     embed_layer = HarmonyEmbedding(vocab_sizes, d_model)
     
-    # 深度学习模型通常处理一个 Batch (批量) 的数据，即输入通常是 3 维的：
-    # (batch_size, sequence_length, features)
-    # 我们现在只有一首曲子，所以手动在最前面加一个 batch_size=1 的维度
-    input_batch = tensor_sequence.unsqueeze(0) 
-    print(f"送入模型的 Batch 形状: {input_batch.shape}")
-    
-    # 见证奇迹的时刻：前向传播！
-    output_vectors = embed_layer(input_batch)
-    print(f"成功获取稠密向量! 最终融合张量形状: {output_vectors.shape}")
+    # 从 DataLoader 中抽取第一个 Batch 看看
+    for batch_x, batch_y in dataloader:
+        print(f"获取到的输入批次 X 的形状: {batch_x.shape} -> (batch_size, context_length, features)")
+        print(f"获取到的目标批次 Y 的形状: {batch_y.shape} -> Y 是 X 向未来偏移了一步")
+        
+        # 把 X 送进我们的特征嵌入大门！
+        embedded_x = embed_layer(batch_x)
+        print(f"流经 Embedding 层后，张量形状变为: {embedded_x.shape} -> 完美契合 Transformer 的输入要求！")
+        
+        # 为了演示，我们只看第一个 Batch 就退出循环
+        break

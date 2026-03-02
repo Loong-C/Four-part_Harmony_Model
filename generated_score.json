@@ -1,0 +1,66 @@
+[
+  {
+    "Chord": "I",
+    "Dur": 1.0,
+    "Soprano": "<HOLD>",
+    "Alto": "61",
+    "Tenor": "<HOLD>",
+    "Bass": "<HOLD>"
+  },
+  {
+    "Chord": "IV",
+    "Dur": 1.0,
+    "Soprano": "71",
+    "Alto": "<REST>",
+    "Tenor": "57",
+    "Bass": "54"
+  },
+  {
+    "Chord": "V",
+    "Dur": 1.0,
+    "Soprano": "<HOLD>",
+    "Alto": "71",
+    "Tenor": "59",
+    "Bass": "52"
+  },
+  {
+    "Chord": "I",
+    "Dur": 1.0,
+    "Soprano": "76",
+    "Alto": "64",
+    "Tenor": "64",
+    "Bass": "57"
+  },
+  {
+    "Chord": "IV6",
+    "Dur": 1.0,
+    "Soprano": "76",
+    "Alto": "71",
+    "Tenor": "64",
+    "Bass": "55"
+  },
+  {
+    "Chord": "I64",
+    "Dur": 1.0,
+    "Soprano": "74",
+    "Alto": "69",
+    "Tenor": "66",
+    "Bass": "54"
+  },
+  {
+    "Chord": "V",
+    "Dur": 1.0,
+    "Soprano": "76",
+    "Alto": "71",
+    "Tenor": "64",
+    "Bass": "52"
+  },
+  {
+    "Chord": "I6",
+    "Dur": 2.0,
+    "Soprano": "74",
+    "Alto": "69",
+    "Tenor": "66",
+    "Bass": "50"
+  }
+]

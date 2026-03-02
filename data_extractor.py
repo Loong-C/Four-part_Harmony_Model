@@ -6,7 +6,7 @@ def extract_structured_harmony_data(bwv_number='bach/bwv253.mxl'):
     每一行对应 [Chord, Duration, Soprano, Alto, Tenor, Bass]。
     """
     print(f"Parsing {bwv_number}...")
-    score = m21.corpus.parse(bwv_number)
+    score = m21.converter.parse(bwv_number)
     key = score.analyze('key')
     chordified = score.chordify()
     
